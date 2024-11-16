@@ -1,80 +1,94 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, Code, Palette, Video, Globe, MessageSquare } from 'lucide-react';
+import { Sparkles, Code, Palette, Video, Globe, BookOpen } from 'lucide-react';
 
-const features = [
+const services = [
   {
-    icon: <Sparkles className="h-6 w-6" />,
-    title: 'AI-Powered Content',
-    description: 'Leverage cutting-edge AI technology to create engaging content.'
+    icon: <Sparkles className="h-8 w-8" />,
+    title: 'AI-Powered Content Creation',
+    description: 'Leverage cutting-edge AI technology to create engaging content that resonates with your audience.',
+    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800'
   },
   {
-    icon: <Palette className="h-6 w-6" />,
+    icon: <Palette className="h-8 w-8" />,
     title: 'Graphic Design',
-    description: 'Create stunning visuals that capture attention and convey your message.'
+    description: 'Create stunning visuals that capture attention and convey your message effectively.',
+    image: 'https://images.unsplash.com/photo-1572044162444-ad60f128bdea?auto=format&fit=crop&q=80&w=800'
   },
   {
-    icon: <Video className="h-6 w-6" />,
-    title: 'Motion Graphics',
-    description: 'Bring your ideas to life with dynamic motion graphics and animations.'
+    icon: <Video className="h-8 w-8" />,
+    title: 'Motion Graphics & Animation',
+    description: 'Bring your ideas to life with dynamic motion graphics and captivating animations.',
+    image: 'https://images.unsplash.com/photo-1551269901-5c5e14c25df7?auto=format&fit=crop&q=80&w=800'
   },
   {
-    icon: <Code className="h-6 w-6" />,
-    title: 'Web Development',
-    description: 'Build modern, responsive websites that drive results.'
+    icon: <Globe className="h-8 w-8" />,
+    title: 'Social Media Management',
+    description: 'Engage your audience across all social platforms with strategic content and analytics.',
+    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800'
   },
   {
-    icon: <Globe className="h-6 w-6" />,
-    title: 'Social Media',
-    description: 'Engage your audience across all social media platforms.'
-  },
-  {
-    icon: <MessageSquare className="h-6 w-6" />,
+    icon: <BookOpen className="h-8 w-8" />,
     title: 'Religious Content',
-    description: 'Create meaningful religious content that resonates with your audience.'
+    description: 'Create meaningful Quran and Islamic content that inspires and educates.',
+    image: 'https://images.unsplash.com/photo-1585036156171-384164a8c675?auto=format&fit=crop&q=80&w=800'
+  },
+  {
+    icon: <Code className="h-8 w-8" />,
+    title: 'Web Development',
+    description: 'Build modern, responsive websites that drive results and enhance user experience.',
+    image: 'https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&q=80&w=800'
   }
 ];
 
 const Features = () => {
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-24 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-3xl sm:text-4xl font-bold text-gray-900"
+            className="text-4xl sm:text-5xl font-bold text-gray-900"
           >
-            Everything you need to succeed
+            Our Services
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto"
+            className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto"
           >
-            Our comprehensive suite of services helps you create, grow, and succeed in the digital world.
+            Comprehensive solutions to help you create, grow, and succeed in the digital world
           </motion.p>
         </div>
 
-        <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="relative group"
+              className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
             >
-              <div className="h-full bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-200">
-                <div className="text-primary-600 mb-5">
-                  {feature.icon}
+              <div className="aspect-[16/10] overflow-hidden">
+                <img 
+                  src={service.image} 
+                  alt={service.title}
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-8">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="text-primary-600">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900">
+                    {service.title}
+                  </h3>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  {feature.title}
-                </h3>
                 <p className="text-gray-600">
-                  {feature.description}
+                  {service.description}
                 </p>
               </div>
             </motion.div>
