@@ -21,8 +21,8 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: 'AI Content Platform',
-    description: 'Automated content generation system with advanced AI integration',
+    title: 'Co.msadeq AI Platform',
+    description: 'Next-generation AI content platform for creative professionals',
     category: 'AI Development',
     image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800',
     link: '#',
@@ -31,8 +31,8 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: 'Brand Identity Design',
-    description: 'Complete visual identity system for a tech startup',
+    title: 'Co.msadeq Brand System',
+    description: 'Comprehensive brand identity system for digital innovation',
     category: 'Graphic Design',
     image: 'https://images.unsplash.com/photo-1572044162444-ad60f128bdea?auto=format&fit=crop&q=80&w=800',
     link: '#',
@@ -40,8 +40,8 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: 'Motion Graphics Series',
-    description: 'Educational animation series for social media',
+    title: 'Co.msadeq Motion Series',
+    description: 'Dynamic motion graphics for brand storytelling',
     category: 'Animation',
     image: 'https://images.unsplash.com/photo-1551269901-5c5e14c25df7?auto=format&fit=crop&q=80&w=800',
     link: '#',
