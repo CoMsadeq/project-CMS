@@ -11,8 +11,8 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-5xl sm:text-6xl lg:text-8xl font-bold text-gray-900 tracking-tight"
           >
-            Empowering Your Ideas
-            <span className="block mt-2 text-primary-600">with Vision</span>
+            Co.msadeq
+            <span className="block mt-2 text-primary-600">Digital Innovation</span>
           </motion.h1>
           
           <motion.p 

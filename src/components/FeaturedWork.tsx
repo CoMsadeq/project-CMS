@@ -81,7 +81,7 @@ const FeaturedWork: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl sm:text-5xl font-bold text-gray-900"
           >
-            Our Latest Work
+            Co.msadeq Portfolio
           </motion.h2>
           
           <motion.p 
@@ -90,7 +90,7 @@ const FeaturedWork: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto"
           >
-            Showcasing impactful projects across design, AI, and social media
+            Showcasing innovative solutions in AI, design, and digital experiences
           </motion.p>
 
           {/* Category Filter */}

@@ -28,7 +28,7 @@ const WorkTogether = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl sm:text-5xl font-bold text-white"
           >
-            Ready to Start Your Project?
+            Create with Co.msadeq
           </motion.h2>
           
           <motion.p 

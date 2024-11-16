@@ -50,7 +50,7 @@ const Features = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl sm:text-5xl font-bold text-gray-900"
           >
-            Our Services
+            Co.msadeq Services
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
